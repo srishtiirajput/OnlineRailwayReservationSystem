@@ -1,4 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using RailwayReservation.Interfaces;
+using RailwayReservation.Models;
+using RailwayReservation.Repositories;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,36 +12,46 @@ namespace RailwayReservation.Controllers
     [ApiController]
     public class ClassController : ControllerBase
     {
-        // GET: api/<ClassController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly IClass classRepo;
+
+        public ClassController(IClass _classRepo)
         {
-            return new string[] { "value1", "value2" };
+            classRepo = _classRepo;
         }
 
-        // GET api/<ClassController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("get-all")]
+        public async Task<IActionResult> GetAll()
         {
-            return "value";
+            var classes = await classRepo.GetAll();
+            if (!classes.Any())
+            {
+                return NotFound();
+            }
+            return Ok(classes);
         }
 
-        // POST api/<ClassController>
-        [HttpPost]
-        public void Post([FromBody]string value)
+        [HttpGet("search")]
+        public async Task<IActionResult> Search([FromQuery] string className)
         {
+            var result = await classRepo.SearchByClassName(className);
+            if (!result.Any())
+            {
+                return NotFound();
+            }
+            return Ok(result);
         }
 
-        // PUT api/<ClassController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        // Filter classes by class type
+        [HttpGet("filter")]
+        public async Task<IActionResult> FilterByClassType([FromQuery] string classType)
         {
+            var result = await classRepo.GetByClassType(classType);
+            if (!result.Any())
+            {
+                return NotFound();
+            }
+            return Ok(result);
         }
 
-        // DELETE api/<ClassController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }

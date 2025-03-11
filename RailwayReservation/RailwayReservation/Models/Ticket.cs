@@ -33,6 +33,8 @@ public partial class Ticket
 
     public string Coach { get; set; } = null!;
 
+    public virtual ICollection<PassengerDetail> PassengerDetails { get; set; } = new List<PassengerDetail>();
+
     public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
 
     public virtual ICollection<ReservationDetail> ReservationDetails { get; set; } = new List<ReservationDetail>();

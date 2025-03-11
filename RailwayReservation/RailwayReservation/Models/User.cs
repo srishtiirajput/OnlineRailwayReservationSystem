@@ -13,7 +13,11 @@ public partial class User
 
     public string Phone { get; set; } = null!;
 
-    public string Password { get; set; } = null!;
+    public string? Role { get; set; }
+
+    public string? HashPassword { get; set; }
+
+    public string? SaltPassword { get; set; }
 
     public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
 
@@ -22,6 +26,4 @@ public partial class User
     public virtual ICollection<Support> Supports { get; set; } = new List<Support>();
 
     public virtual ICollection<Ticket> Tickets { get; set; } = new List<Ticket>();
-
-    public virtual UserRole? UserRole { get; set; }
 }

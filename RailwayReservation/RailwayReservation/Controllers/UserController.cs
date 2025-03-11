@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RailwayReservation.Interfaces;
+using RailwayReservation.Models;
+
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,36 +11,63 @@ namespace RailwayReservation.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        // GET: api/<UserController>
+        private readonly IUsers _userRepository;
+        public UserController(IUsers userRepository)
+        {
+            _userRepository = userRepository;
+        }
+
+        // Get all users
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IActionResult> GetAllUsers()
         {
-            return new string[] { "value1", "value2" };
+            var users = await _userRepository.GetAllUsersAsync();
+            return Ok(users);
         }
 
-        // GET api/<UserController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+
+        //Get a user by ID
+        //[HttpGet("{userId}")]
+        //public async Task<IActionResult> GetUserById(string userId)
+        //{
+        //    var user = await _userRepository.GetUserByIdAsync(userId);
+        //    if (user == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return Ok(user);
+        //}
+
+
+
+
+        //Update a user
+        [HttpPut("{userId}")]
+        public async Task<IActionResult> UpdateUser([FromBody] UserVM user)
         {
-            return "value";
+
+            var updatedUser = await _userRepository.UpdateUserAsync(user);
+            if (!updatedUser)
+            {
+                return NotFound();
+            }
+
+            return Ok();
         }
 
-        // POST api/<UserController>
-        [HttpPost]
-        public void Post([FromBody]string value)
+        //Delete a user
+        [HttpDelete("{userId}")]
+        public async Task<IActionResult> DeleteUser(string userId)
         {
-        }
+            var deleted = await _userRepository.DeleteUserAsync(userId);
+            if (!deleted)
+            {
+                return NotFound();
+            }
 
-        // PUT api/<UserController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
+            return NoContent();
         }
-
-        // DELETE api/<UserController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        
     }
 }

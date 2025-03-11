@@ -285,64 +285,6 @@ namespace RailwayReservation.Migrations
                     b.ToTable("ReservationDetails");
                 });
 
-            modelBuilder.Entity("RailwayReservation.Models.Role", b =>
-                {
-                    b.Property<string>("RoleId")
-                        .HasMaxLength(10)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(10)");
-
-                    b.Property<string>("RoleName")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(20)");
-
-                    b.HasKey("RoleId")
-                        .HasName("PK__Roles__8AFACE1AC20F9775");
-
-                    b.ToTable("Roles");
-                });
-
-            modelBuilder.Entity("RailwayReservation.Models.Route", b =>
-                {
-                    b.Property<string>("RouteId")
-                        .HasMaxLength(10)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(10)")
-                        .HasColumnName("RouteID");
-
-                    b.Property<TimeOnly?>("Arrival")
-                        .HasColumnType("time");
-
-                    b.Property<TimeOnly?>("Departure")
-                        .HasColumnType("time");
-
-                    b.Property<string>("Destination")
-                        .HasMaxLength(20)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(20)");
-
-                    b.Property<int>("Distance")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Duration")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(20)");
-
-                    b.Property<string>("Source")
-                        .HasMaxLength(20)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(20)");
-
-                    b.HasKey("RouteId")
-                        .HasName("PK__Route__80979AAD9EFF58F3");
-
-                    b.ToTable("Route", (string)null);
-                });
-
             modelBuilder.Entity("RailwayReservation.Models.Seat", b =>
                 {
                     b.Property<string>("SeatId")
@@ -571,6 +513,45 @@ namespace RailwayReservation.Migrations
                     b.ToTable("TrainQuota");
                 });
 
+            modelBuilder.Entity("RailwayReservation.Models.TrainRoute", b =>
+                {
+                    b.Property<string>("RouteId")
+                        .HasMaxLength(10)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(10)")
+                        .HasColumnName("RouteID");
+
+                    b.Property<TimeOnly?>("Arrival")
+                        .HasColumnType("time");
+
+                    b.Property<TimeOnly?>("Departure")
+                        .HasColumnType("time");
+
+                    b.Property<string>("Destination")
+                        .HasMaxLength(20)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<int>("Distance")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Duration")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<string>("Source")
+                        .HasMaxLength(20)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(20)");
+
+                    b.HasKey("RouteId")
+                        .HasName("PK__Route__80979AAD9EFF58F3");
+
+                    b.ToTable("TrainRoute", (string)null);
+                });
+
             modelBuilder.Entity("RailwayReservation.Models.User", b =>
                 {
                     b.Property<string>("UserId")
@@ -601,30 +582,15 @@ namespace RailwayReservation.Migrations
                         .IsUnicode(false)
                         .HasColumnType("varchar(10)");
 
+                    b.Property<string>("Role")
+                        .HasMaxLength(20)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(20)");
+
                     b.HasKey("UserId")
                         .HasName("PK__Users__1788CC4C9849D219");
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("RailwayReservation.Models.UserRole", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasMaxLength(10)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(10)");
-
-                    b.Property<string>("RoleId")
-                        .HasMaxLength(10)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(10)");
-
-                    b.HasKey("UserId")
-                        .HasName("PK__UserRole__1788CC4C5D108166");
-
-                    b.HasIndex("RoleId");
-
-                    b.ToTable("UserRoles");
                 });
 
             modelBuilder.Entity("RailwayReservation.Models.Coach", b =>
@@ -785,24 +751,6 @@ namespace RailwayReservation.Migrations
                     b.Navigation("Train");
                 });
 
-            modelBuilder.Entity("RailwayReservation.Models.UserRole", b =>
-                {
-                    b.HasOne("RailwayReservation.Models.Role", "Role")
-                        .WithMany("UserRoles")
-                        .HasForeignKey("RoleId")
-                        .HasConstraintName("FK__UserRoles__RoleI__29572725");
-
-                    b.HasOne("RailwayReservation.Models.User", "User")
-                        .WithOne("UserRole")
-                        .HasForeignKey("RailwayReservation.Models.UserRole", "UserId")
-                        .IsRequired()
-                        .HasConstraintName("FK__UserRoles__UserI__286302EC");
-
-                    b.Navigation("Role");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("RailwayReservation.Models.Class", b =>
                 {
                     b.Navigation("Coaches");
@@ -830,11 +778,6 @@ namespace RailwayReservation.Migrations
                     b.Navigation("Supports");
                 });
 
-            modelBuilder.Entity("RailwayReservation.Models.Role", b =>
-                {
-                    b.Navigation("UserRoles");
-                });
-
             modelBuilder.Entity("RailwayReservation.Models.Ticket", b =>
                 {
                     b.Navigation("Payments");
@@ -856,8 +799,6 @@ namespace RailwayReservation.Migrations
                     b.Navigation("Supports");
 
                     b.Navigation("Tickets");
-
-                    b.Navigation("UserRole");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RailwayReservation.Interfaces;
+using RailwayReservation.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,36 +10,73 @@ namespace RailwayReservation.Controllers
     [ApiController]
     public class TicketController : ControllerBase
     {
-        // GET: api/<TicketController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private ITicket _ticket;
+        public TicketController(ITicket ticket)
         {
-            return new string[] { "value1", "value2" };
+            _ticket = ticket;
         }
 
-        // GET api/<TicketController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
 
-        // POST api/<TicketController>
         [HttpPost]
-        public void Post([FromBody]string value)
+        public async Task<ActionResult<Ticket>> CreateTicket([FromBody] Ticket ticket)
         {
+            var newTicket = await _ticket.AddTicket(ticket);
+            return Ok(ticket);
         }
 
-        // PUT api/<TicketController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        [HttpGet("{ticketId}")]
+        public async Task<IActionResult> GetTicketById(string ticketId)
         {
+            var ticket = await _ticket.GetTicketById(ticketId);
+
+            if (ticket == null)
+            {
+                return NotFound(new { message = $"Ticket with ID {ticketId} not found." });
+            }
+
+            return Ok(ticket);
         }
 
-        // DELETE api/<TicketController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+
+
+        [HttpDelete("cancel/{ticketId}")]
+        public async Task<IActionResult> CancelTicket(string ticketId)
         {
+            var ticket = await _ticket.GetTicketById(ticketId);
+            if (ticket == null)
+            {
+                return NotFound("Ticket not found for cancellation.");
+            }
+
+            await _ticket.CancelTicket(ticketId);
+            return Ok("Ticket successfully canceled.");
         }
+
+        [HttpGet("status/{status}")]
+        public async Task<IActionResult> GetByStatusAsync(string status)
+        {
+            var tickets = await _ticket.GetByStatus(status);
+
+            // Check if no tickets found
+            if (tickets == null || !tickets.Any())
+            {
+                return NotFound(new { message = "No tickets found with the specified status." });
+            }
+            return Ok(tickets);
+        }
+
+        //[HttpGet("SearchTrain")]
+        //public async Task<IActionResult> GetTrains([FromQuery] string? sourceStation, [FromQuery] string? destinationStation)
+        //{
+        //    var trains = await _ticket.GetTrains(sourceStation, destinationStation);
+
+        //    if (trains == null || !trains.Any())
+        //    {
+        //        return NotFound(new { message = "No trains found matching the given criteria." });
+        //    }
+        //    return Ok(trains);
+        //}
+
     }
 }
+

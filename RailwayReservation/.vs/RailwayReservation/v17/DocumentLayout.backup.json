@@ -1,14 +1,270 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\srishti\\RailwayReservation\\",
+  "WorkspaceRootPath": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\srishti\\railwayreservation\\railwayreservation\\migrations\\20250306072543_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\migrations\\20250306072543_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\repositories\\trainrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\repositories\\trainrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\srishti\\railwayreservation\\railwayreservation\\models\\onlinerailwayreservationsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\controllers\\traincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\controllers\\traincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\interfaces\\itrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\interfaces\\itrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\models\\onlinerailwayreservationsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\models\\onlinerailwayreservationsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\validators\\trainvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\validators\\trainvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\models\\train.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\models\\train.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\viewmodels\\trainroutemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\viewmodels\\trainroutemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\repositories\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\repositories\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\repositories\\trainrouterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\repositories\\trainrouterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\repositories\\classrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\repositories\\classrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\repositories\\coachrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\repositories\\coachrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\viewmodels\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\viewmodels\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\validators\\uservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\validators\\uservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\interfaces\\iusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\interfaces\\iusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\services\\seatgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\services\\seatgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\services\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\services\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\validators\\trainroutevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\validators\\trainroutevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\viewmodels\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\viewmodels\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\repositories\\seatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\repositories\\seatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\models\\trainroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\models\\trainroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\repositories\\trainclassrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\repositories\\trainclassrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\models\\trainclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\models\\trainclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\models\\uservm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\models\\uservm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\models\\coach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\models\\coach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\repositories\\querylistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\repositories\\querylistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\repositories\\queryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\repositories\\queryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\repositories\\reservationdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\repositories\\reservationdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\models\\reservationdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\models\\reservationdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\railwayreservation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\railwayreservation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\interfaces\\ireservationdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\interfaces\\ireservationdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\repositories\\trainquotumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\repositories\\trainquotumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\repositories\\supportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\repositories\\supportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\repositories\\quotumrepostiory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\repositories\\quotumrepostiory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\repositories\\farerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\repositories\\farerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\interfaces\\itrainroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\interfaces\\itrainroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\interfaces\\iticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\interfaces\\iticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\interfaces\\isupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\interfaces\\isupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\interfaces\\iseat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\interfaces\\iseat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\interfaces\\iquerylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\interfaces\\iquerylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\interfaces\\iquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\interfaces\\iquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\interfaces\\iclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\interfaces\\iclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\controllers\\trainroutecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\controllers\\trainroutecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\controllers\\trainquotumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\controllers\\trainquotumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\controllers\\trainclasscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\controllers\\trainclasscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\controllers\\supportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\controllers\\supportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\controllers\\seatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\controllers\\seatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\controllers\\reservationdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\controllers\\reservationdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\controllers\\querylistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\controllers\\querylistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\controllers\\querycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\controllers\\querycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\controllers\\farecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\controllers\\farecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\controllers\\coachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\controllers\\coachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\controllers\\quotumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\controllers\\quotumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|c:\\users\\srajput\\documents\\sprint\\onlinerailwayreservationsystem\\railwayreservation\\railwayreservation\\migrations\\20250310055612_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC9D7AE-00C2-4658-A9FE-C2E9F163167D}|RailwayReservation\\RailwayReservation.csproj|solutionrelative:railwayreservation\\migrations\\20250310055612_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +274,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{02c9407d-69f0-4910-b5c7-0dff86947e95}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
@@ -27,27 +287,860 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20250306072543_Initial.cs",
-              "DocumentMoniker": "C:\\srishti\\RailwayReservation\\RailwayReservation\\Migrations\\20250306072543_Initial.cs",
-              "RelativeDocumentMoniker": "RailwayReservation\\Migrations\\20250306072543_Initial.cs",
-              "ToolTip": "C:\\srishti\\RailwayReservation\\RailwayReservation\\Migrations\\20250306072543_Initial.cs",
-              "RelativeToolTip": "RailwayReservation\\Migrations\\20250306072543_Initial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "TrainRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\TrainRepository.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Repositories\\TrainRepository.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\TrainRepository.cs",
+              "RelativeToolTip": "RailwayReservation\\Repositories\\TrainRepository.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAIFXVv4IAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T07:25:44.16Z",
+              "WhenOpened": "2025-03-08T12:01:48.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ITrain.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\ITrain.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Interfaces\\ITrain.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\ITrain.cs",
+              "RelativeToolTip": "RailwayReservation\\Interfaces\\ITrain.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T12:04:09.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OnlineRailwayReservationSystemDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\OnlineRailwayReservationSystemDbContext.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Models\\OnlineRailwayReservationSystemDbContext.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\OnlineRailwayReservationSystemDbContext.cs",
+              "RelativeToolTip": "RailwayReservation\\Models\\OnlineRailwayReservationSystemDbContext.cs",
+              "ViewState": "AgIAAHkBAAAAAAAAAAAowIMBAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T05:41:15.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TrainController.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\TrainController.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Controllers\\TrainController.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\TrainController.cs",
+              "RelativeToolTip": "RailwayReservation\\Controllers\\TrainController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T12:05:32.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\UserController.cs",
+              "RelativeToolTip": "RailwayReservation\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T12:00:53.293Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OnlineRailwayReservationSystemDbContext.cs",
-              "DocumentMoniker": "C:\\srishti\\RailwayReservation\\RailwayReservation\\Models\\OnlineRailwayReservationSystemDbContext.cs",
-              "RelativeDocumentMoniker": "RailwayReservation\\Models\\OnlineRailwayReservationSystemDbContext.cs",
-              "ToolTip": "C:\\srishti\\RailwayReservation\\RailwayReservation\\Models\\OnlineRailwayReservationSystemDbContext.cs",
-              "RelativeToolTip": "RailwayReservation\\Models\\OnlineRailwayReservationSystemDbContext.cs",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "RailwayReservation\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T12:02:18.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TrainValidator.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Validators\\TrainValidator.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Validators\\TrainValidator.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Validators\\TrainValidator.cs",
+              "RelativeToolTip": "RailwayReservation\\Validators\\TrainValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T10:00:10.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Train.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\Train.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Models\\Train.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\Train.cs",
+              "RelativeToolTip": "RailwayReservation\\Models\\Train.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T06:20:02.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TrainRouteModel.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\ViewModels\\TrainRouteModel.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\ViewModels\\TrainRouteModel.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\ViewModels\\TrainRouteModel.cs",
+              "RelativeToolTip": "RailwayReservation\\ViewModels\\TrainRouteModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T07:24:43.413Z"
+              "WhenOpened": "2025-03-11T11:33:58.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TicketRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\TicketRepository.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Repositories\\TicketRepository.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\TicketRepository.cs",
+              "RelativeToolTip": "RailwayReservation\\Repositories\\TicketRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:49:18.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TrainRouteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\TrainRouteRepository.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Repositories\\TrainRouteRepository.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\TrainRouteRepository.cs",
+              "RelativeToolTip": "RailwayReservation\\Repositories\\TrainRouteRepository.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAkwBsAAACoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T12:01:59.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ClassRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\ClassRepository.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Repositories\\ClassRepository.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\ClassRepository.cs",
+              "RelativeToolTip": "RailwayReservation\\Repositories\\ClassRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwBsAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T12:35:43.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CoachRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\CoachRepository.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Repositories\\CoachRepository.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\CoachRepository.cs",
+              "RelativeToolTip": "RailwayReservation\\Repositories\\CoachRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:45:32.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "RailwayReservation\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T12:16:38.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RegisterModel.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\ViewModels\\RegisterModel.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\ViewModels\\RegisterModel.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\ViewModels\\RegisterModel.cs",
+              "RelativeToolTip": "RailwayReservation\\ViewModels\\RegisterModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T17:22:05.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserValidator.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Validators\\UserValidator.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Validators\\UserValidator.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Validators\\UserValidator.cs",
+              "RelativeToolTip": "RailwayReservation\\Validators\\UserValidator.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T18:18:21.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IUsers.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\IUsers.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Interfaces\\IUsers.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\IUsers.cs",
+              "RelativeToolTip": "RailwayReservation\\Interfaces\\IUsers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T07:09:44.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\User.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\User.cs",
+              "RelativeToolTip": "RailwayReservation\\Models\\User.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA/wBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T06:47:15.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Services\\TokenService.cs",
+              "RelativeToolTip": "RailwayReservation\\Services\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T18:56:43.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SeatGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Services\\SeatGenerator.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Services\\SeatGenerator.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Services\\SeatGenerator.cs",
+              "RelativeToolTip": "RailwayReservation\\Services\\SeatGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T09:18:07.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Services\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Services\\PasswordHasher.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Services\\PasswordHasher.cs",
+              "RelativeToolTip": "RailwayReservation\\Services\\PasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T18:54:35.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TrainRouteValidator.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Validators\\TrainRouteValidator.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Validators\\TrainRouteValidator.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Validators\\TrainRouteValidator.cs",
+              "RelativeToolTip": "RailwayReservation\\Validators\\TrainRouteValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T10:07:47.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Program.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Program.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Program.cs",
+              "RelativeToolTip": "RailwayReservation\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAC4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T12:07:36.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\ViewModels\\LoginModel.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\ViewModels\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\ViewModels\\LoginModel.cs",
+              "RelativeToolTip": "RailwayReservation\\ViewModels\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T04:37:22.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SeatRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\SeatRepository.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Repositories\\SeatRepository.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\SeatRepository.cs",
+              "RelativeToolTip": "RailwayReservation\\Repositories\\SeatRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:48:51.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TrainRoute.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\TrainRoute.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Models\\TrainRoute.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\TrainRoute.cs",
+              "RelativeToolTip": "RailwayReservation\\Models\\TrainRoute.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T09:41:47.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TrainClass.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\TrainClass.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Models\\TrainClass.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\TrainClass.cs",
+              "RelativeToolTip": "RailwayReservation\\Models\\TrainClass.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T08:36:00.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserVM.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\UserVM.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Models\\UserVM.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\UserVM.cs",
+              "RelativeToolTip": "RailwayReservation\\Models\\UserVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T05:52:07.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TrainClassRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\TrainClassRepository.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Repositories\\TrainClassRepository.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\TrainClassRepository.cs",
+              "RelativeToolTip": "RailwayReservation\\Repositories\\TrainClassRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:50:22.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Coach.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\Coach.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Models\\Coach.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\Coach.cs",
+              "RelativeToolTip": "RailwayReservation\\Models\\Coach.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T08:36:09.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "QueryListRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\QueryListRepository.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Repositories\\QueryListRepository.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\QueryListRepository.cs",
+              "RelativeToolTip": "RailwayReservation\\Repositories\\QueryListRepository.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwDQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:47:07.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "QueryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\QueryRepository.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Repositories\\QueryRepository.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\QueryRepository.cs",
+              "RelativeToolTip": "RailwayReservation\\Repositories\\QueryRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAkwB8AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:46:42.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ReservationDetailRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\ReservationDetailRepository.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Repositories\\ReservationDetailRepository.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\ReservationDetailRepository.cs",
+              "RelativeToolTip": "RailwayReservation\\Repositories\\ReservationDetailRepository.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAuwBUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:47:49.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ReservationDetail.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\ReservationDetail.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Models\\ReservationDetail.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\ReservationDetail.cs",
+              "RelativeToolTip": "RailwayReservation\\Models\\ReservationDetail.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA7wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T07:24:26.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\appsettings.json",
+              "RelativeDocumentMoniker": "RailwayReservation\\appsettings.json",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\appsettings.json",
+              "RelativeToolTip": "RailwayReservation\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-10T10:35:35.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\Payment.cs",
+              "RelativeToolTip": "RailwayReservation\\Models\\Payment.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T06:36:34.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "RailwayReservation.csproj",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\RailwayReservation.csproj",
+              "RelativeDocumentMoniker": "RailwayReservation\\RailwayReservation.csproj",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\RailwayReservation.csproj",
+              "RelativeToolTip": "RailwayReservation\\RailwayReservation.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-06T08:06:07.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\Ticket.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Models\\Ticket.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Models\\Ticket.cs",
+              "RelativeToolTip": "RailwayReservation\\Models\\Ticket.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAiwAcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T06:34:42.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "20250310055612_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Migrations\\20250310055612_Initial.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Migrations\\20250310055612_Initial.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Migrations\\20250310055612_Initial.cs",
+              "RelativeToolTip": "RailwayReservation\\Migrations\\20250310055612_Initial.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAQwIgAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T05:56:12.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IReservationDetail.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\IReservationDetail.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Interfaces\\IReservationDetail.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\IReservationDetail.cs",
+              "RelativeToolTip": "RailwayReservation\\Interfaces\\IReservationDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T04:47:16.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "TrainQuotumRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\TrainQuotumRepository.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Repositories\\TrainQuotumRepository.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\TrainQuotumRepository.cs",
+              "RelativeToolTip": "RailwayReservation\\Repositories\\TrainQuotumRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:50:40.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "SupportRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\SupportRepository.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Repositories\\SupportRepository.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\SupportRepository.cs",
+              "RelativeToolTip": "RailwayReservation\\Repositories\\SupportRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:49:05.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "QuotumRepostiory.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\QuotumRepostiory.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Repositories\\QuotumRepostiory.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\QuotumRepostiory.cs",
+              "RelativeToolTip": "RailwayReservation\\Repositories\\QuotumRepostiory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:47:24.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "PaymentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\PaymentRepository.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Repositories\\PaymentRepository.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\PaymentRepository.cs",
+              "RelativeToolTip": "RailwayReservation\\Repositories\\PaymentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:45:45.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "FareRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\FareRepository.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Repositories\\FareRepository.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Repositories\\FareRepository.cs",
+              "RelativeToolTip": "RailwayReservation\\Repositories\\FareRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:46:15.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ITrainRoute.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\ITrainRoute.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Interfaces\\ITrainRoute.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\ITrainRoute.cs",
+              "RelativeToolTip": "RailwayReservation\\Interfaces\\ITrainRoute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T12:21:56.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ITicket.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\ITicket.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Interfaces\\ITicket.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\ITicket.cs",
+              "RelativeToolTip": "RailwayReservation\\Interfaces\\ITicket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:48:01.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ISupport.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\ISupport.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Interfaces\\ISupport.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\ISupport.cs",
+              "RelativeToolTip": "RailwayReservation\\Interfaces\\ISupport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T05:39:14.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ISeat.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\ISeat.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Interfaces\\ISeat.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\ISeat.cs",
+              "RelativeToolTip": "RailwayReservation\\Interfaces\\ISeat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:51:25.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "IQueryList.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\IQueryList.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Interfaces\\IQueryList.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\IQueryList.cs",
+              "RelativeToolTip": "RailwayReservation\\Interfaces\\IQueryList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAABBwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T09:45:00.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "IQuery.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\IQuery.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Interfaces\\IQuery.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\IQuery.cs",
+              "RelativeToolTip": "RailwayReservation\\Interfaces\\IQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T09:56:33.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IClass.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\IClass.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Interfaces\\IClass.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Interfaces\\IClass.cs",
+              "RelativeToolTip": "RailwayReservation\\Interfaces\\IClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T12:39:55.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "TrainRouteController.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\TrainRouteController.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Controllers\\TrainRouteController.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\TrainRouteController.cs",
+              "RelativeToolTip": "RailwayReservation\\Controllers\\TrainRouteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T12:16:39.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "TrainQuotumController.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\TrainQuotumController.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Controllers\\TrainQuotumController.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\TrainQuotumController.cs",
+              "RelativeToolTip": "RailwayReservation\\Controllers\\TrainQuotumController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:04:45.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "TrainClassController.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\TrainClassController.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Controllers\\TrainClassController.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\TrainClassController.cs",
+              "RelativeToolTip": "RailwayReservation\\Controllers\\TrainClassController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:04:19.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "TicketController.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\TicketController.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Controllers\\TicketController.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\TicketController.cs",
+              "RelativeToolTip": "RailwayReservation\\Controllers\\TicketController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwA0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:03:37.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "SupportController.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\SupportController.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Controllers\\SupportController.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\SupportController.cs",
+              "RelativeToolTip": "RailwayReservation\\Controllers\\SupportController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:03:15.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "SeatController.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\SeatController.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Controllers\\SeatController.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\SeatController.cs",
+              "RelativeToolTip": "RailwayReservation\\Controllers\\SeatController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:02:25.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "ReservationDetail.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\ReservationDetail.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Controllers\\ReservationDetail.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\ReservationDetail.cs",
+              "RelativeToolTip": "RailwayReservation\\Controllers\\ReservationDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:43:20.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "QueryListController.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\QueryListController.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Controllers\\QueryListController.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\QueryListController.cs",
+              "RelativeToolTip": "RailwayReservation\\Controllers\\QueryListController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:42:34.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "QueryController.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\QueryController.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Controllers\\QueryController.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\QueryController.cs",
+              "RelativeToolTip": "RailwayReservation\\Controllers\\QueryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T07:59:27.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Controllers\\PaymentController.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "RailwayReservation\\Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T07:59:05.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "FareController.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\FareController.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Controllers\\FareController.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\FareController.cs",
+              "RelativeToolTip": "RailwayReservation\\Controllers\\FareController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T07:58:41.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "CoachController.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\CoachController.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Controllers\\CoachController.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\CoachController.cs",
+              "RelativeToolTip": "RailwayReservation\\Controllers\\CoachController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T07:58:15.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "ClassController.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\ClassController.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Controllers\\ClassController.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\ClassController.cs",
+              "RelativeToolTip": "RailwayReservation\\Controllers\\ClassController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T12:36:16.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "QuotumController.cs",
+              "DocumentMoniker": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\QuotumController.cs",
+              "RelativeDocumentMoniker": "RailwayReservation\\Controllers\\QuotumController.cs",
+              "ToolTip": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\Controllers\\QuotumController.cs",
+              "RelativeToolTip": "RailwayReservation\\Controllers\\QuotumController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAABRwBMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T07:59:56.457Z",
+              "EditorCaption": ""
             }
           ]
         },

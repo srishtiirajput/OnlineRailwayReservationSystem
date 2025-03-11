@@ -5,11 +5,15 @@ namespace RailwayReservation.Models;
 
 public partial class TrainClass
 {
-    public string TrainId { get; set; } = null!;
+    public int TrainClassId { get; set; }
 
-    public string ClassId { get; set; } = null!;
+    public string? TrainId { get; set; }
 
-    public virtual Class Class { get; set; } = null!;
+    public string? ClassId { get; set; }
 
-    public virtual Train Train { get; set; } = null!;
+    public virtual Class? Class { get; set; }
+
+    public virtual ICollection<ClassCoach> ClassCoaches { get; set; } = new List<ClassCoach>();
+
+    public virtual Train? Train { get; set; }
 }

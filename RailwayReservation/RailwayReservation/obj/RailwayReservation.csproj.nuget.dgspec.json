@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\srishti\\RailwayReservation\\RailwayReservation\\RailwayReservation.csproj": {}
+    "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\RailwayReservation.csproj": {}
   },
   "projects": {
-    "C:\\srishti\\RailwayReservation\\RailwayReservation\\RailwayReservation.csproj": {
+    "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\RailwayReservation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\srishti\\RailwayReservation\\RailwayReservation\\RailwayReservation.csproj",
+        "projectUniqueName": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\RailwayReservation.csproj",
         "projectName": "RailwayReservation",
-        "projectPath": "C:\\srishti\\RailwayReservation\\RailwayReservation\\RailwayReservation.csproj",
+        "projectPath": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\RailwayReservation.csproj",
         "packagesPath": "C:\\Users\\SRAJPUT\\.nuget\\packages\\",
-        "outputPath": "C:\\srishti\\RailwayReservation\\RailwayReservation\\obj\\",
+        "outputPath": "C:\\Users\\SRAJPUT\\Documents\\Sprint\\OnlineRailwayReservationSystem\\RailwayReservation\\RailwayReservation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,30 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

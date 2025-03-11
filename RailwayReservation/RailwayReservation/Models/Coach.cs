@@ -11,7 +11,5 @@ public partial class Coach
 
     public string CoachNumber { get; set; } = null!;
 
-    public virtual Class? Class { get; set; }
-
-    public virtual ICollection<Seat> Seats { get; set; } = new List<Seat>();
+    public virtual ICollection<ClassCoach> ClassCoaches { get; set; } = new List<ClassCoach>();
 }

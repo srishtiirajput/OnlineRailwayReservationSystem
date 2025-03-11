@@ -13,7 +13,7 @@ public partial class Class
 
     public int AvailableSeats { get; set; }
 
-    public virtual ICollection<Coach> Coaches { get; set; } = new List<Coach>();
-
     public virtual ICollection<Fare> Fares { get; set; } = new List<Fare>();
+
+    public virtual ICollection<TrainClass> TrainClasses { get; set; } = new List<TrainClass>();
 }

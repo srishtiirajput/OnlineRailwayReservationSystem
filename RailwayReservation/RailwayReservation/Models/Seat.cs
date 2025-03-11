@@ -5,13 +5,15 @@ namespace RailwayReservation.Models;
 
 public partial class Seat
 {
-    public string SeatId { get; set; } = null!;
+    public int SeatId { get; set; }
 
-    public string? CoachId { get; set; }
+    public int SeatNumber { get; set; }
 
-    public int? SeatNumber { get; set; }
+    public bool AvailabilityStatus { get; set; }
 
-    public bool? AvailabilityStatus { get; set; }
+    public int? ClassCoachId { get; set; }
 
-    public virtual Coach? Coach { get; set; }
+    public string Quota { get; set; } = null!;
+
+    public virtual ClassCoach? ClassCoach { get; set; }
 }

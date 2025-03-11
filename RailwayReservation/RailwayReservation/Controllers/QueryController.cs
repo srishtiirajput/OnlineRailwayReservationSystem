@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RailwayReservation.Interfaces;
+using RailwayReservation.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,36 +10,53 @@ namespace RailwayReservation.Controllers
     [ApiController]
     public class QueryController : ControllerBase
     {
-        // GET: api/<QueryController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private IQuery queryRepository;
+
+        public QueryController(IQuery _queryRepository)
         {
-            return new string[] { "value1", "value2" };
+            queryRepository = _queryRepository;
         }
 
-        // GET api/<QueryController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpPost("add")]
+        public async Task<IActionResult> AddQuery([FromBody] Query query)
         {
-            return "value";
+            await queryRepository.AddQuery(query);
+            return CreatedAtAction(nameof(GetQueryById), new { queryId = query.QueryId }, query);
         }
 
-        // POST api/<QueryController>
-        [HttpPost]
-        public void Post([FromBody]string value)
+        [HttpGet("get-all")]
+        public async Task<IActionResult> GetAllQueries()
         {
+            var queries = await queryRepository.GetAllQueries();
+            if (!queries.Any())
+            {
+                return NotFound("No queries found");
+            }
+
+            return Ok(queries);
         }
 
-        // PUT api/<QueryController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        [HttpGet("{queryId}")]
+        public async Task<IActionResult> GetQueryById(string queryId)
         {
+            var query = await queryRepository.GetQueryById(queryId);
+            if (query == null)
+            {
+                return NotFound();
+            }
+            return Ok(query);
         }
 
-        // DELETE api/<QueryController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpGet("search")]
+        public async Task<IActionResult> GetQueriesByKeyword([FromQuery] string keyword)
         {
+            var queries = await queryRepository.GetQueriesByKeyword(keyword);
+            if (!queries.Any())
+            {
+                return NotFound();
+            }
+
+            return Ok(queries);
         }
     }
 }
