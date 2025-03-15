@@ -11,9 +11,9 @@ public partial class Seat
 
     public bool AvailabilityStatus { get; set; }
 
-    public int? ClassCoachId { get; set; }
+    public string? Quota { get; set; }
 
-    public string Quota { get; set; } = null!;
+    public int? ClassCoachId { get; set; }
 
     public virtual ClassCoach? ClassCoach { get; set; }
 }

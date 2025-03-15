@@ -62,27 +62,6 @@ namespace RailwayReservation.Repositories
         {
             return _context.Tickets.Where(t => t.TicketStatus == status).ToList();
         }
-
-        //public async Task<IEnumerable<Ticket>> GetTrainsAsync(string sourceStation, string destinationStation)
-        //{
-
-        //    var ticketsFromSourceToDestination = _context.Tickets
-        //        .Where(t => t.SourceStation == sourceStation && t.DestinationStation == destinationStation)
-        //        .ToList();
-
-        //    if(!ticketsFromSourceToDestination.Any())
-        //    {
-        //        return new List<Ticket>();
-        //    }
-
-        //    return ticketsFromSourceToDestination;
-        //}
-
-
-
-
-
-
     }
 }
 

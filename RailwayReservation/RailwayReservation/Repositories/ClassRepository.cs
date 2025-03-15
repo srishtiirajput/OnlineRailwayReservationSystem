@@ -15,10 +15,6 @@ namespace RailwayReservation.Repositories
             return _context.Classes.ToList();
         }
 
-        //public Class? GetById(string classId)
-        //{
-        //    return _context.Classes.FirstOrDefault(c => c.ClassId == classId);
-        //}
 
         public async Task<IEnumerable<Class>> SearchByClassName(string className)
         {

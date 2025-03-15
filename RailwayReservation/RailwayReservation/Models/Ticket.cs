@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using RailwayReservation.ViewModels;
 
 namespace RailwayReservation.Models;
 
@@ -7,11 +8,11 @@ public partial class Ticket
 {
     public string TicketId { get; set; } = null!;
 
-    public string? UserId { get; set; }
+    public string UserId { get; set; }
 
-    public string? TrainId { get; set; }
+    public string TrainId { get; set; }
 
-    public string Pnr { get; set; } = null!;
+    public int Pnr { get; set; } 
 
     public TimeOnly Duration { get; set; }
 
@@ -21,7 +22,7 @@ public partial class Ticket
 
     public string TicketStatus { get; set; } = null!;
 
-    public double TotalFare { get; set; }
+    public decimal TotalFare { get; set; }
 
     public DateTime JourneyStartDate { get; set; }
 
@@ -33,13 +34,25 @@ public partial class Ticket
 
     public string Coach { get; set; } = null!;
 
+    public string TrainNumber { get; set; }
+
+    public string TrainName { get; set; }
+
+    public DateTime BookingDate { get; set; }
+
+    public long TransactionNumber { get; set; }
+
+    public string QuotaName { get; set; }
+
     public virtual ICollection<PassengerDetail> PassengerDetails { get; set; } = new List<PassengerDetail>();
 
     public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
 
     public virtual ICollection<ReservationDetail> ReservationDetails { get; set; } = new List<ReservationDetail>();
 
-    public virtual Train? Train { get; set; }
+    public Train Train { get; set; }
 
-    public virtual User? User { get; set; }
+    public User User { get; set; }
+
+    public List<PassengerTicket> PassengerTicket { get; set; }
 }

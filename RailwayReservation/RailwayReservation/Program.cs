@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using RailwayReservation.Services;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using OnlineRailwayReservationSystemAPI.Services;
+using RailwayReservation.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,17 +21,24 @@ builder.Services.AddDbContext<OnlineRailwayReservationSystemDbContext>(options =
 // Add services to the container.
 builder.Services.AddScoped<IUsers, UserRepository>();
 builder.Services.AddScoped<ITrain, TrainRepository>();
-builder.Services.AddScoped<ITrainRoute, TrainRouteRepository>();
 builder.Services.AddScoped<IClass, ClassRepository>();
-builder.Services.AddScoped<IQuery, QueryRepository>();
-builder.Services.AddScoped<IQueryList, QueryListRepository>();
+builder.Services.AddScoped<ITrain, TrainRepository>();
+builder.Services.AddScoped<ITrainClass, TrainClassRepository>();
+builder.Services.AddScoped<ISupport, SupportRepository>();
+builder.Services.AddScoped<IPaymentService, PaymentService>();
+builder.Services.AddScoped<ITicket, TicketRepository>();
+builder.Services.AddScoped<IPassengerDetail, PassengerDetailRepository>();
+//builder.Services.AddScoped<IQuery, QueryRepository>();
+//builder.Services.AddScoped<IQueryList, QueryListRepository>();
 builder.Services.AddScoped<PasswordHasher>();
 builder.Services.AddScoped<TokenService>();
+builder.Services.AddScoped<SeatGenerator>();
 
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 
 builder.Services.AddControllers();
+builder.Services.AddHttpClient();
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

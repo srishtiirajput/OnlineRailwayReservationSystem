@@ -21,5 +21,13 @@ public partial class PassengerDetail
 
     public string TicketId { get; set; } = null!;
 
+    public string? UserId { get; set; }
+
+    public string? PhoneNumber { get; set; }
+
+    public virtual ICollection<ReservationDetail> ReservationDetails { get; set; } = new List<ReservationDetail>();
+
     public virtual Ticket Ticket { get; set; } = null!;
+
+    public virtual User? User { get; set; }
 }

@@ -1,26 +1,17 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using RailwayReservation.Models;
+using RailwayReservation.ViewModels;
 
 namespace RailwayReservation.Interfaces
 {
     public interface ITrain
     {
-        Task<IEnumerable<Train>> GetAllTrainsAsync();
+        bool TrainExists(string id);
         Task<Train> GetTrainByIdAsync(string trainId);
-        Task<Train> GetTrainByNameAsync(string trainName);
-
-        Task AddTrainAsync(Train train);
-
-        Task UpdateTrainAsync(string trainId, Train train);
-
-        Task DeleteTrainAsync(string trainId);
-
-        Task<IEnumerable<Train>> GetTrainsByRouteAsync(string trainRoute);
-
-        Task<IEnumerable<Train>> GetTrainsByRunningDayAsync(string runningDay);
-        void ValidateTrainId(string trainId);
-
-        Task ValidateTrainAsync(Train train);
+        Task<List<Train>> GetAllTrainsAsync();
+        Task<bool> AddTrainSeatsAsync(string trainId, List<string> classIds);
+        Train AddTrainDetails(TrainVM trainVm);
+        bool CheckAvailability(string trainId, string quota, int passCount);
 
     }
 }

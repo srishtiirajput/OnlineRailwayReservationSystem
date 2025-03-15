@@ -45,6 +45,8 @@ public partial class OnlineRailwayReservationSystemDbContext : DbContext
 
     public virtual DbSet<TrainRoute> TrainRoutes { get; set; }
 
+    public virtual DbSet<Transaction> Transactions { get; set; }
+
     public virtual DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -72,23 +74,21 @@ public partial class OnlineRailwayReservationSystemDbContext : DbContext
 
         modelBuilder.Entity<ClassCoach>(entity =>
         {
-            entity.HasKey(e => e.ClassCoachId).HasName("PK__ClassCoa__FC6359FDA942B847");
+            entity.HasKey(e => e.ClassCoachId).HasName("PK__ClassCoa__FC6359FDD3BFC34A");
 
             entity.ToTable("ClassCoach");
 
-            entity.Property(e => e.ClassCoachId).ValueGeneratedNever();
             entity.Property(e => e.CoachId)
                 .HasMaxLength(10)
                 .IsUnicode(false);
 
             entity.HasOne(d => d.Coach).WithMany(p => p.ClassCoaches)
                 .HasForeignKey(d => d.CoachId)
-                .HasConstraintName("FK_Coach");
+                .HasConstraintName("FK__ClassCoac__Coach__32AB8735");
 
             entity.HasOne(d => d.TrainClass).WithMany(p => p.ClassCoaches)
                 .HasForeignKey(d => d.TrainClassId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_TrainClass");
+                .HasConstraintName("FK__ClassCoac__Train__31B762FC");
         });
 
         modelBuilder.Entity<Coach>(entity =>
@@ -147,7 +147,13 @@ public partial class OnlineRailwayReservationSystemDbContext : DbContext
             entity.Property(e => e.Name)
                 .HasMaxLength(50)
                 .IsUnicode(false);
+            entity.Property(e => e.PhoneNumber)
+                .HasMaxLength(15)
+                .IsUnicode(false);
             entity.Property(e => e.TicketId)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.UserId)
                 .HasMaxLength(10)
                 .IsUnicode(false);
 
@@ -155,6 +161,10 @@ public partial class OnlineRailwayReservationSystemDbContext : DbContext
                 .HasForeignKey(d => d.TicketId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Passenger__Ticke__06CD04F7");
+
+            entity.HasOne(d => d.User).WithMany(p => p.PassengerDetails)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK__Passenger__UserI__3B40CD36");
         });
 
         modelBuilder.Entity<Payment>(entity =>
@@ -233,21 +243,39 @@ public partial class OnlineRailwayReservationSystemDbContext : DbContext
                 .HasMaxLength(10)
                 .IsUnicode(false);
             entity.Property(e => e.Address).HasColumnType("text");
+            entity.Property(e => e.BookingDate).HasColumnType("datetime");
             entity.Property(e => e.Gender)
                 .HasMaxLength(10)
                 .IsUnicode(false);
             entity.Property(e => e.Name)
                 .HasMaxLength(30)
                 .IsUnicode(false);
+            entity.Property(e => e.PassengerId)
+                .HasMaxLength(10)
+                .IsUnicode(false);
             entity.Property(e => e.PaymentId)
                 .HasMaxLength(10)
                 .IsUnicode(false);
+            entity.Property(e => e.QuotaName)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.Status)
+                .HasMaxLength(50)
+                .IsUnicode(false);
             entity.Property(e => e.TicketId)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.TotalFare).HasColumnType("decimal(18, 2)");
+            entity.Property(e => e.TrainId)
                 .HasMaxLength(10)
                 .IsUnicode(false);
             entity.Property(e => e.UserId)
                 .HasMaxLength(10)
                 .IsUnicode(false);
+
+            entity.HasOne(d => d.Passenger).WithMany(p => p.ReservationDetails)
+                .HasForeignKey(d => d.PassengerId)
+                .HasConstraintName("FK__Reservati__Passe__45BE5BA9");
 
             entity.HasOne(d => d.Payment).WithMany(p => p.ReservationDetails)
                 .HasForeignKey(d => d.PaymentId)
@@ -259,6 +287,10 @@ public partial class OnlineRailwayReservationSystemDbContext : DbContext
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Reservati__Ticke__5070F446");
 
+            entity.HasOne(d => d.Train).WithMany(p => p.ReservationDetails)
+                .HasForeignKey(d => d.TrainId)
+                .HasConstraintName("FK__Reservati__Train__44CA3770");
+
             entity.HasOne(d => d.User).WithMany(p => p.ReservationDetails)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
@@ -267,18 +299,17 @@ public partial class OnlineRailwayReservationSystemDbContext : DbContext
 
         modelBuilder.Entity<Seat>(entity =>
         {
-            entity.HasKey(e => e.SeatId).HasName("PK__Seat__311713F33E92649A");
+            entity.HasKey(e => e.SeatId).HasName("PK__Seat__311713F35F7E69D4");
 
             entity.ToTable("Seat");
 
-            entity.Property(e => e.SeatId).ValueGeneratedNever();
             entity.Property(e => e.Quota)
                 .HasMaxLength(10)
                 .IsUnicode(false);
 
             entity.HasOne(d => d.ClassCoach).WithMany(p => p.Seats)
                 .HasForeignKey(d => d.ClassCoachId)
-                .HasConstraintName("FK_Seat_ClassCoach");
+                .HasConstraintName("FK__Seat__ClassCoach__3587F3E0");
         });
 
         modelBuilder.Entity<Support>(entity =>
@@ -323,6 +354,7 @@ public partial class OnlineRailwayReservationSystemDbContext : DbContext
             entity.Property(e => e.TicketId)
                 .HasMaxLength(10)
                 .IsUnicode(false);
+            entity.Property(e => e.BookingDate).HasColumnType("datetime");
             entity.Property(e => e.ClassName)
                 .HasMaxLength(30)
                 .IsUnicode(false);
@@ -338,6 +370,9 @@ public partial class OnlineRailwayReservationSystemDbContext : DbContext
                 .HasMaxLength(10)
                 .IsUnicode(false)
                 .HasColumnName("PNR");
+            entity.Property(e => e.QuotaName)
+                .HasMaxLength(50)
+                .IsUnicode(false);
             entity.Property(e => e.SeatNumber)
                 .HasMaxLength(5)
                 .IsUnicode(false);
@@ -348,6 +383,12 @@ public partial class OnlineRailwayReservationSystemDbContext : DbContext
                 .HasMaxLength(10)
                 .IsUnicode(false);
             entity.Property(e => e.TrainId)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.TrainName)
+                .HasMaxLength(30)
+                .IsUnicode(false);
+            entity.Property(e => e.TrainNumber)
                 .HasMaxLength(10)
                 .IsUnicode(false);
             entity.Property(e => e.UserId)
@@ -372,11 +413,21 @@ public partial class OnlineRailwayReservationSystemDbContext : DbContext
             entity.Property(e => e.TrainId)
                 .HasMaxLength(10)
                 .IsUnicode(false);
+            entity.Property(e => e.DestinationStation)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.JourneyEndDate).HasColumnType("datetime");
+            entity.Property(e => e.JourneyStartDate).HasColumnType("datetime");
             entity.Property(e => e.RouteId)
                 .HasMaxLength(10)
-                .IsUnicode(false);
+                .IsUnicode(false)
+                .HasColumnName("RouteID");
             entity.Property(e => e.RunningDay)
                 .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.SeatFare).HasColumnType("decimal(18, 0)");
+            entity.Property(e => e.SourceStation)
+                .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.TrainName)
                 .HasMaxLength(30)
@@ -387,18 +438,19 @@ public partial class OnlineRailwayReservationSystemDbContext : DbContext
 
             entity.HasOne(d => d.TrainRoute).WithMany(p => p.Trains)
                 .HasForeignKey(d => d.RouteId)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("fk_RouteId");
+                .HasConstraintName("FK__Train__RouteID__3A4CA8FD");
         });
 
         modelBuilder.Entity<TrainClass>(entity =>
         {
-            entity.HasKey(e => e.TrainClassId).HasName("PK__TrainCla__7FBBCD9486B5D826");
+            entity.HasKey(e => e.TrainClassId).HasName("PK__TrainCla__7FBBCD94F1FEB43A");
 
             entity.ToTable("TrainClass");
 
-            entity.Property(e => e.TrainClassId).ValueGeneratedNever();
             entity.Property(e => e.ClassId)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.RouteId)
                 .HasMaxLength(10)
                 .IsUnicode(false);
             entity.Property(e => e.TrainId)
@@ -407,11 +459,15 @@ public partial class OnlineRailwayReservationSystemDbContext : DbContext
 
             entity.HasOne(d => d.Class).WithMany(p => p.TrainClasses)
                 .HasForeignKey(d => d.ClassId)
-                .HasConstraintName("FK_Class");
+                .HasConstraintName("FK__TrainClas__Class__2DE6D218");
+
+            entity.HasOne(d => d.Route).WithMany(p => p.TrainClasses)
+                .HasForeignKey(d => d.RouteId)
+                .HasConstraintName("FK__TrainClas__Route__2EDAF651");
 
             entity.HasOne(d => d.Train).WithMany(p => p.TrainClasses)
                 .HasForeignKey(d => d.TrainId)
-                .HasConstraintName("FK_Train");
+                .HasConstraintName("FK__TrainClas__Train__2CF2ADDF");
         });
 
         modelBuilder.Entity<TrainRoute>(entity =>
@@ -433,6 +489,19 @@ public partial class OnlineRailwayReservationSystemDbContext : DbContext
             entity.Property(e => e.Source)
                 .HasMaxLength(20)
                 .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<Transaction>(entity =>
+        {
+            entity.HasKey(e => e.TransactionId).HasName("PK__Transact__55433A6B6CCDC1A4");
+
+            entity.Property(e => e.CardHolderName)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+            entity.Property(e => e.CardNumber)
+                .HasMaxLength(16)
+                .IsUnicode(false);
+            entity.Property(e => e.Cvv).HasColumnName("CVV");
         });
 
         modelBuilder.Entity<User>(entity =>

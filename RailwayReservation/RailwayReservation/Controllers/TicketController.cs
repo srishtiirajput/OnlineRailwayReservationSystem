@@ -49,7 +49,7 @@ namespace RailwayReservation.Controllers
             }
 
             await _ticket.CancelTicket(ticketId);
-            return Ok("Ticket successfully canceled.");
+            return Ok("Ticket successfully cancelled.");
         }
 
         [HttpGet("status/{status}")]

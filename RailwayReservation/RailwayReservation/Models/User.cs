@@ -19,6 +19,8 @@ public partial class User
 
     public string? SaltPassword { get; set; }
 
+    public virtual ICollection<PassengerDetail> PassengerDetails { get; set; } = new List<PassengerDetail>();
+
     public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
 
     public virtual ICollection<ReservationDetail> ReservationDetails { get; set; } = new List<ReservationDetail>();

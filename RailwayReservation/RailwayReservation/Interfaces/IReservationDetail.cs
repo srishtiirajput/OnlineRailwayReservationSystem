@@ -1,13 +1,13 @@
 ﻿using RailwayReservation.Models;
+using RailwayReservation.ViewModels;
 
 namespace RailwayReservation.Interfaces
 {
     public interface IReservationDetail
     {
-        Task<IEnumerable<ReservationDetail>> GetAllAsync();
-        Task<ReservationDetail> GetByIdAsync(string reservationId);
-        Task<ReservationDetail> AddAsync(ReservationDetail reservationDetails);
-        Task<ReservationDetail> UpdateAsync(string reservationId, ReservationDetail reservationDetails);
-        Task<bool> DeleteAsync(string reservationId);
+        Ticket CancelTicket(int pnr);
+        Ticket GetTicket(int pnr, string role, string userId);
+        Ticket AddReservation(ReservationDTO reservation, string userId, List<PassengerDetail> passengers);
+        
     }
 }

@@ -1,5 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RailwayReservation.Repositories;
 using RailwayReservation.Interfaces;
+using RailwayReservation.Models;
+using Microsoft.EntityFrameworkCore;
+using RailwayReservation.ViewModels;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -9,44 +13,78 @@ namespace RailwayReservation.Controllers
     [ApiController]
     public class TrainController : ControllerBase
     {
-        private readonly ITrain trainRepo;
-
-        public TrainController(ITrain _trainRepo)
+        private readonly ITrain _trainRepository;
+        public TrainController(ITrain trainRepository)
         {
-            trainRepo = _trainRepo;
+            _trainRepository = trainRepository;
         }
 
-        [HttpGet("GetAllTrain")]
+       
+        [HttpGet]
         public async Task<IActionResult> GetAllTrains()
         {
-            var trains = await trainRepo.GetAllTrainsAsync();
+            var trains = await _trainRepository.GetAllTrainsAsync();
             return Ok(trains);
         }
 
-
+        // Get a specific train by ID
         [HttpGet("{trainId}")]
         public async Task<IActionResult> GetTrainById(string trainId)
         {
-            var train = await trainRepo.GetTrainByIdAsync(trainId);
+            var train = await _trainRepository.GetTrainByIdAsync(trainId);
             if (train == null)
             {
-                return NotFound("Train not found.");
+                return NotFound($"Train with ID {trainId} not found.");
             }
+
             return Ok(train);
         }
 
-        [HttpGet("by-name/{trainName}")]
-        public async Task<IActionResult> GetTrainByName(string trainName)
+
+        // Add seats for a train
+        [HttpPost("{trainId}/seats")]
+        public async Task<IActionResult> AddSeats(string trainId, [FromBody] List<string> classIds)
         {
-            var train = await trainRepo.GetTrainByNameAsync(trainName);
-            if (train == null)
+            var success = await _trainRepository.AddTrainSeatsAsync(trainId, classIds);
+            if (success)
             {
-                return NotFound($"Train with name '{trainName}' not found.");
+                return Ok("Seats added successfully.");
             }
 
-            return Ok(train);
+            return BadRequest("Failed to add seats.");
         }
 
-        
+        [HttpPost("Add")]
+        public ActionResult<Train> AddTrain([FromBody] TrainVM trainVm)
+        {
+            if (ModelState.IsValid)
+            {
+                if (trainVm.SourceStation == trainVm.DestinationStation)
+                {
+                    return BadRequest(new { msg = "Source Station and Sestination Station must be Different" });
+                }
+                if (trainVm.AvailableGeneralSeat + trainVm.AvailableLadiesSeat != trainVm.TotalSeats)
+                {
+                    return BadRequest(new { msg = "Total of General and Ladies seats must be same as Total Seats" });
+                }
+                if (trainVm.JourneyEndDate > trainVm.JourneyStartDate)
+                {
+                    return BadRequest(new { msg = "Journey start date should be before journey end date" });
+                }
+                if (trainVm.JourneyStartDate <= DateTime.Now)
+                {
+                    return BadRequest(new { msg = "Journey start date should be a future date" });
+                }
+
+                Train train = _trainRepository.AddTrainDetails(trainVm);
+                if (train == null)
+                    return Conflict(new { msg = "Some error happens...Try Again" });
+
+                return CreatedAtAction("AddTrain", train);
+            }
+
+            return ValidationProblem("Fill the data Properly...");
+        }
+
     }
 }

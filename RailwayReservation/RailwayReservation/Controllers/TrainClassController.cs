@@ -1,43 +1,78 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RailwayReservation.Models;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
-namespace RailwayReservation.Controllers
+[ApiController]
+[Route("api/[controller]")]
+public class TrainClassController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class TrainClassController : ControllerBase
+    private readonly TrainClassRepository _trainClassRepository;
+
+    public TrainClassController(TrainClassRepository trainClassRepository)
     {
-        // GET: api/<TrainClassController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        _trainClassRepository = trainClassRepository;
+    }
+
+    // POST api/trainclass
+    [HttpPost]
+    public async Task<IActionResult> CreateTrainClass([FromBody] TrainClass trainClass)
+    {
+        if (trainClass == null)
         {
-            return new string[] { "value1", "value2" };
+            return BadRequest("TrainClass data is required.");
         }
 
-        // GET api/<TrainClassController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        var createdTrainClass = await _trainClassRepository.CreateTrainClassAsync(trainClass);
+        return CreatedAtAction(nameof(GetTrainClassById), new { id = createdTrainClass.TrainClassId }, createdTrainClass);
+    }
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetTrainClassById(int id)
+    {
+        var trainClass = await _trainClassRepository.GetTrainClassByIdAsync(id);
+
+        if (trainClass == null)
         {
-            return "value";
+            return NotFound($"TrainClass with ID {id} not found.");
         }
 
-        // POST api/<TrainClassController>
-        [HttpPost]
-        public void Post([FromBody]string value)
+        return Ok(trainClass);
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAllTrainClasses()
+    {
+        var trainClasses = await _trainClassRepository.GetAllTrainClassesAsync();
+        return Ok(trainClasses);
+    }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> UpdateTrainClass(int id, [FromBody] TrainClass updatedTrainClass)
+    {
+        if (updatedTrainClass == null)
         {
+            return BadRequest("TrainClass data is required.");
         }
 
-        // PUT api/<TrainClassController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        var trainClass = await _trainClassRepository.UpdateTrainClassAsync(id, updatedTrainClass);
+
+        if (trainClass == null)
         {
+            return NotFound($"TrainClass with ID {id} not found.");
         }
 
-        // DELETE api/<TrainClassController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        return Ok(trainClass);
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteTrainClass(int id)
+    {
+        var result = await _trainClassRepository.DeleteTrainClassAsync(id);
+
+        if (!result)
         {
+            return NotFound($"TrainClass with ID {id} not found.");
         }
+
+        return NoContent(); // Successfully deleted
     }
 }

@@ -1,180 +1,183 @@
-﻿using Microsoft.EntityFrameworkCore;
-using FluentValidation;
+﻿using FluentValidation;
 using FluentValidation.Results;
-using RailwayReservation.Models;
+using Microsoft.EntityFrameworkCore;
+using RailwayReservation.Validators;
 using RailwayReservation.Interfaces;
+using RailwayReservation.Models;
+using RailwayReservation.ViewModels;
 
-public class TrainRepository : ITrain
+namespace RailwayReservation.Repositories
 {
-    private readonly OnlineRailwayReservationSystemDbContext _context;
-
-    private readonly TrainValidator _validator = new();
-
-    public TrainRepository(OnlineRailwayReservationSystemDbContext context)
-
+    public class TrainRepository : ITrain
     {
 
-        _context = context;
-
-    }
-
-    // 🟢 GET ALL TRAINS
-
-    public async Task<IEnumerable<Train>> GetAllTrainsAsync()
-
-    {
-
-        return await _context.Trains.ToListAsync();
-
-    }
-
-    // 🟢 GET TRAIN BY ID
-
-    public async Task<Train> GetTrainByIdAsync(string trainId)
-
-    {
-
-        ValidateTrainId(trainId);
-
-        var train = await _context.Trains.FindAsync(trainId);
-
-        if (train == null)
-
-            throw new KeyNotFoundException($"Train with ID '{trainId}' not found.");
-
-        return train;
-
-    }
-
-    // 🟢 ADD TRAIN (WITH VALIDATION)
-
-    public async Task AddTrainAsync(Train train)
-
-    {
-
-        await ValidateTrainAsync(train);
-
-        bool exists = await _context.Trains.AnyAsync(t => t.TrainId == train.TrainId);
-
-        if (exists)
-
-            throw new InvalidOperationException($"A train with ID '{train.TrainId}' already exists.");
-
-        await _context.Trains.AddAsync(train);
-
-        await _context.SaveChangesAsync();
-
-    }
-
-    // 🟢 UPDATE TRAIN (WITH VALIDATION)
-
-    public async Task UpdateTrainAsync(string trainId, Train train)
-
-    {
-
-        ValidateTrainId(trainId);
-
-        await ValidateTrainAsync(train);
-
-        var existingTrain = await _context.Trains.FindAsync(trainId);
-
-        if (existingTrain == null)
-
-            throw new KeyNotFoundException($"Train with ID '{trainId}' not found.");
-
-        existingTrain.TrainNumber = train.TrainNumber;
-
-        existingTrain.TrainName = train.TrainName;
-
-        existingTrain.RunningDay = train.RunningDay;
-
-        existingTrain.TrainRoute = train.TrainRoute;
-
-        await _context.SaveChangesAsync();
-
-    }
-
-    // 🟢 DELETE TRAIN
-
-    public async Task DeleteTrainAsync(string trainId)
-
-    {
-
-        ValidateTrainId(trainId);
-
-        var train = await _context.Trains.FindAsync(trainId);
-
-        if (train == null)
-
-            throw new KeyNotFoundException($"Train with ID '{trainId}' not found.");
-
-        _context.Trains.Remove(train);
-
-        await _context.SaveChangesAsync();
-
-    }
-
-    // 🟢 GET TRAINS BY ROUTE
-
-    public async Task<IEnumerable<Train>> GetTrainsByRouteAsync(string trainRoute)
-
-    {
-
-        if (string.IsNullOrWhiteSpace(trainRoute))
-
-            throw new ArgumentException("Route cannot be null or empty.");
-
-        return await _context.Trains.Where(t => t.TrainRoute == trainRoute).ToListAsync();
-
-    }
-
-    // 🟢 GET TRAINS BY RUNNING DAY
-
-    public async Task<IEnumerable<Train>> GetTrainsByRunningDayAsync(string runningDay)
-
-    {
-
-        if (string.IsNullOrWhiteSpace(runningDay))
-
-            throw new ArgumentException("Running day cannot be null or empty.");
-
-        return await _context.Trains
-
-            .Where(t => t.RunningDay != null && t.RunningDay.Contains(runningDay))
-
-            .ToListAsync();
-
-    }
-
-    // 🟢 PRIVATE: Validate Train ID Format
-
-    private void ValidateTrainId(string trainId)
-
-    {
-
-        if (string.IsNullOrWhiteSpace(trainId))
-
-            throw new ArgumentException("Train ID cannot be null or empty.");
-
-    }
-
-    // 🟢 PRIVATE: Validate Train Data (Using FluentValidation)
-
-    private async Task ValidateTrainAsync(Train train)
-
-    {
-
-        ValidationResult validationResult = await _validator.ValidateAsync(train);
-
-        if (!validationResult.IsValid)
+        private readonly OnlineRailwayReservationSystemDbContext _context;
+
+        private readonly TrainValidator _validator;
+        private readonly ILogger<Train> _log;
+
+        public TrainRepository(OnlineRailwayReservationSystemDbContext context, TrainValidator validator, ILogger<Train> log)
+        {
+            _context = context;
+            _validator = validator;
+            _log = log;
+        }
+
+        public bool TrainExists(string id)
+        {
+            return _context.Trains.Any(e => e.TrainId == id);
+        }
+
+        public async Task<Train> GetTrainByIdAsync(string trainId)
+        {
+            ValidateTrainId(trainId);
+            var train = await _context.Trains.FindAsync(trainId);
+            if (train == null)
+                throw new KeyNotFoundException($"Train with ID '{trainId}' not found.");
+            return train;
+
+        }
+        private void ValidateTrainId(string trainId)
 
         {
 
-            throw new ValidationException(validationResult.Errors);
+            if (string.IsNullOrWhiteSpace(trainId))
+
+                throw new ArgumentException("Train ID cannot be null or empty.");
 
         }
 
+        public async Task<List<Train>> GetAllTrainsAsync()
+        {
+            return await _context.Trains.ToListAsync();
+        }
+
+        public async Task AddTrainAsync(Train train)
+        {
+            await _context.Trains.AddAsync(train);
+            await _context.SaveChangesAsync();
+        }
+
+        public Train AddTrainDetails(TrainVM trainVm)
+        {
+            try
+            {
+                var train = new Train()
+                {
+                    TrainId = trainVm.TrainId,
+                    TrainNumber = trainVm.TrainNumber,
+                    TrainName = trainVm.TrainName,
+                    TotalSeats = trainVm.TotalSeats,
+                    SourceStation = trainVm.SourceStation,
+                    DestinationStation = trainVm.DestinationStation,
+                    JourneyStartDate = trainVm.JourneyStartDate,
+                    JourneyEndDate = trainVm.JourneyEndDate,
+                    AvailableGeneralSeats = trainVm.AvailableGeneralSeat,
+                    AvailableLadiesSeats = trainVm.AvailableLadiesSeat,
+                    RunningDay = trainVm.RunningDay,
+                    RouteId = trainVm.RouteId,
+                    SeatFare = trainVm.SeatFare
+                };
+                _context.Trains.Add(train);
+                _context.SaveChanges();
+                return train;
+            }
+            catch (Exception error)
+            {
+                _log.LogError(error.Message);
+            }
+            return null;
+        }
+
+        public async Task<bool> AddTrainSeatsAsync(string trainId, List<string> classIds)
+        {
+            bool areSeatsAdded = false;
+
+            foreach (var classId in classIds)
+            {
+                // Generate TrainClass
+                var newTrainClass = new TrainClass { TrainId = trainId, ClassId = classId };
+                _context.TrainClasses.Add(newTrainClass);
+                await _context.SaveChangesAsync();
+
+                // Generate ClassCoach and Seats
+                string[] coachIds = GetCoachIds(classId);
+                foreach (var coachId in coachIds)
+                {
+                    var classCoach = new ClassCoach { TrainClassId = newTrainClass.TrainClassId, CoachId = coachId };
+                    _context.ClassCoaches.Add(classCoach);
+                    await _context.SaveChangesAsync();
+
+                    // Generate Seats
+                    for (int i = 1; i <= 64; i++)
+                    {
+                        var seat = new Seat
+                        {
+                            SeatNumber = i,
+                            ClassCoachId = classCoach.ClassCoachId,
+                            Quota = i <= 6 ? "Ladies" : "General",
+                            AvailabilityStatus = true
+                        };
+                        _context.Seats.Add(seat);
+                        _context.SaveChanges();
+                    }
+
+                    await _context.SaveChangesAsync();
+                }
+            }
+
+            areSeatsAdded = true;
+            return areSeatsAdded;
+        }
+
+        private string[] GetCoachIds(string classId)
+        {
+            switch (classId)
+            {
+                case "CL101": return new[] { "CH01", "CH02" };
+                case "CL102": return new[] { "CH03", "CH04" };
+                case "CL103": return new[] { "CH05", "CH06" };
+                case "CL104": return new[] { "CH07", "CH08" };
+                case "CL105": return new[] { "CH09", "CH10" };
+                case "CL106": return new[] { "CH11", "CH12" };
+                default: return new string[] { };
+            }
+        }
+
+        public Train GetTrain(string id)
+        {
+            try
+            {
+                return _context.Trains.FirstOrDefault(tr => tr.TrainId == id && tr.JourneyStartDate >= DateTime.Now);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        public bool CheckAvailability(string trainId, string quota, int passCount)
+        {
+            Train train = GetTrain(trainId);
+            if (train == null)
+            {
+                return false;
+            }
+            if (quota == "General")
+            {
+                if (train.AvailableGeneralSeats >= passCount)
+                {
+                    return true;
+                }
+
+            }
+            else if (quota == "Ladies")
+            {
+                if (train.AvailableLadiesSeats >= passCount)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
-
 }
-

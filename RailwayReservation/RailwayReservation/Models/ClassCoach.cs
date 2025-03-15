@@ -7,7 +7,7 @@ public partial class ClassCoach
 {
     public int ClassCoachId { get; set; }
 
-    public int TrainClassId { get; set; }
+    public int? TrainClassId { get; set; }
 
     public string? CoachId { get; set; }
 
@@ -15,5 +15,5 @@ public partial class ClassCoach
 
     public virtual ICollection<Seat> Seats { get; set; } = new List<Seat>();
 
-    public virtual TrainClass TrainClass { get; set; } = null!;
+    public virtual TrainClass? TrainClass { get; set; }
 }
