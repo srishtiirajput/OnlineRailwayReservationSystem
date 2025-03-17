@@ -1,11 +1,9 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Moq;
+﻿using Moq;
 using RailwayReservation.Controllers;
 using RailwayReservation.Interfaces;
 using RailwayReservation.Models;
 using RailwayReservation.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 
 namespace SupportTesting
 {

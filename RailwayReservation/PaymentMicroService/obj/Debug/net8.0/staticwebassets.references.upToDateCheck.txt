@@ -2,3 +2,4 @@ C:\Users\SRAJPUT\Documents\Sprint\OnlineRailwayReservationSystem\RailwayReservat
 C:\Users\SRAJPUT\Documents\Sprint\OnlineRailwayReservationSystem\RailwayReservation\RailwayReservation\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\SRAJPUT\Documents\Sprint\OnlineRailwayReservationSystem\RailwayReservation\RailwayReservation\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\SRAJPUT\Documents\Sprint\OnlineRailwayReservationSystem\RailwayReservation\RailwayReservation\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\SRAJPUT\Documents\Sprint\OnlineRailwayReservationSystem\RailwayReservation\RailwayReservation\obj\Debug\net8.0\staticwebassets.build.json

@@ -9,7 +9,7 @@ var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentD
 builder.Services.AddDbContext<OnlineRailwayReservationSystemDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
 // Add services to the container.
-builder.Services.AddHttpClient<IPayment, PaymentRepository>();
+builder.Services.AddScoped<IPayment, PaymentRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
